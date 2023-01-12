@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>ColorOhhh | Image Resizer</title>
+  </head>
+  <body>
+    <div class="resizer">
+      <h2>ColorOhhh IMAGE RESIZER</h2>
+      <label for="resizer_fileId" class="resizer__upload-btn"
+        >Choose File</label
+      >
+      <input type="file" class="resizer__file" id="resizer_fileId" />
+      <div class="dimensions">
+        <input
+          type="text"
+          class="resizer__input resizer__input--width"
+          value="0"
+        />
+        x
+        <input
+          type="text"
+          class="resizer__input resizer__input--height"
+          value="0"
+        />
+      </div>
+      <label>
+        <p>Keep Aspect Ratio</p>
+        <input type="checkbox" class="resizer__aspect" checked />
+      </label>
+      <canvas class="resizer__canvas" width="500" , height="500"></canvas>
+      <p class="instruct">
+        <span class="instruct-title">Instructions</span>
+        <br />
+        Right click on mouse to and select "Save Image As..."
+      </p>
+      <h2>Supported Formats: JPEG and PNG</h2>
+    </div>
+    <!-- SCRIPT -->
+    <script src="/index.js"></script>
+  </body>
+</html>
